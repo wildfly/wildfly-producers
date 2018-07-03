@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright 2018 Red Hat, Inc. and/or its affiliates
+    and other contributors as indicated by the @author tags.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jboss</groupId>
+    <artifactId>jboss-parent</artifactId>
+    <version>26</version>
+  </parent>
+
+  <groupId>org.jboss.universe.producer</groupId>
+  <artifactId>wildfly-producers-parent</artifactId>
+  <version>1.0.0.Final</version>
+  <packaging>pom</packaging>
+
+  <name>WildFly Feature-pack Producers Parent</name>
+  <inceptionYear>2018</inceptionYear>
+  <licenses>
+    <license>
+      <name>Apache License Version 2.0</name>
+      <url>http://repository.jboss.org/licenses/apache-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <modules>
+    <module>wildfly-core-producer</module>
+    <module>wildfly-servlet-producer</module>
+    <module>wildfly-producer</module>
+  </modules>
+
+  <properties>
+    <!--
+        Dependency versions. Please keep alphabetical.
+
+        Each version property should be of the form "version.<groupId>".
+        For example: <version.org.jboss.as>
+
+        In cases where multiple artifacts use the same groupId but have different
+        versions, add the artifactId or other qualifier to the property name.
+        For example: <version.org.jboss.as.console>
+    -->
+
+    <version.org.jboss.galleon>2.0.0.Alpha1-SNAPSHOT</version.org.jboss.galleon>
+    <version.org.apache.maven>3.3.1</version.org.apache.maven>
+    <version.org.apache.maven.plugin-tools>${version.plugin.plugin}</version.org.apache.maven.plugin-tools>
+    <version.org.apache.maven.plugins.maven-shade-plugin>3.1.0</version.org.apache.maven.plugins.maven-shade-plugin>
+    <version.plugin.plugin>3.5</version.plugin.plugin>
+
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <!-- Modules in this project -->
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>wildfly-core-producer</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>wildfly-servlet-producer</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>wildfly-producer</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <!-- External Dependencies -->
+
+      <dependency>
+        <groupId>org.jboss.galleon</groupId>
+        <artifactId>galleon-core</artifactId>
+        <version>${version.org.jboss.galleon}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jboss.galleon</groupId>
+        <artifactId>galleon-maven-plugins</artifactId>
+        <version>${version.org.jboss.galleon}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jboss.galleon</groupId>
+        <artifactId>galleon-maven-universe</artifactId>
+        <version>${version.org.jboss.galleon}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-core</artifactId>
+        <version>${version.org.apache.maven}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-model</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-model-builder</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-repository-metadata</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-plugin-api</artifactId>
+        <version>${version.org.apache.maven}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.maven.plugin-tools</groupId>
+        <artifactId>maven-plugin-annotations</artifactId>
+        <version>${version.org.apache.maven.plugin-tools}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-artifact</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+</project>
