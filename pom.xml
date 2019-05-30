@@ -29,7 +29,7 @@
 
   <groupId>org.jboss.universe.producer</groupId>
   <artifactId>wildfly-producers</artifactId>
-  <version>1.0.1.Final</version>
+  <version>1.0.2.Final-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>WildFly Feature-pack Producers</name>
@@ -54,14 +54,14 @@
         For example: <version.org.jboss.as.console>
     -->
 
-    <version.org.jboss.galleon>2.0.0.Alpha2</version.org.jboss.galleon>
+    <version.org.jboss.galleon>2.0.0.Final</version.org.jboss.galleon>
   </properties>
 
   <repositories>
     <repository>
       <id>jboss-public-repository-group</id>
       <name>JBoss Public Repository Group</name>
-      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
       <layout>default</layout>
       <releases>
         <enabled>true</enabled>
@@ -77,7 +77,7 @@
     <pluginRepository>
       <id>jboss-public-repository-group</id>
       <name>JBoss Public Repository Group</name>
-      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
