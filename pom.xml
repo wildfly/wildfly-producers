@@ -116,6 +116,14 @@
                       <name>current</name>
                       <version-range>[6.0-alpha,)</version-range>
                     </channel>
+                    <channel>
+                      <name>9.0</name>
+                      <version-range>[9.0-alpha,9.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>10.0</name>
+                      <version-range>[10.0-alpha,10.1)</version-range>
+                    </channel>
                   </channels>
                 </producer>
                 <producer>
@@ -135,6 +143,14 @@
                       <name>current</name>
                       <version-range>[14.0-beta,)</version-range>
                     </channel>
+                    <channel>
+                      <name>17.0</name>
+                      <version-range>[17.0-alpha,17.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>18.0</name>
+                      <version-range>[18.0-alpha,18.1)</version-range>
+                    </channel>
                   </channels>
                 </producer>
                 <producer>
@@ -153,6 +169,14 @@
                     <channel>
                       <name>current</name>
                       <version-range>[14.0-beta,)</version-range>
+                    </channel>
+                    <channel>
+                      <name>17.0</name>
+                      <version-range>[17.0-alpha,17.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>18.0</name>
+                      <version-range>[18.0-alpha,18.1)</version-range>
                     </channel>
                   </channels>
                 </producer>
