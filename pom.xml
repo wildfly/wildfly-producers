@@ -54,7 +54,7 @@
         For example: <version.org.jboss.as.console>
     -->
 
-    <version.org.jboss.galleon>2.0.0.Final</version.org.jboss.galleon>
+    <version.org.jboss.galleon>4.0.4.Final</version.org.jboss.galleon>
   </properties>
 
   <repositories>
@@ -125,6 +125,7 @@
                       <version-range>[10.0-alpha,10.1)</version-range>
                     </channel>
                   </channels>
+                  <defaultChannel>current</defaultChannel>
                 </producer>
                 <producer>
                   <name>wildfly-servlet</name>
@@ -152,6 +153,7 @@
                       <version-range>[18.0-alpha,18.1)</version-range>
                     </channel>
                   </channels>
+                  <defaultChannel>current</defaultChannel>
                 </producer>
                 <producer>
                   <name>wildfly</name>
@@ -179,6 +181,7 @@
                       <version-range>[18.0-alpha,18.1)</version-range>
                     </channel>
                   </channels>
+                  <defaultChannel>current</defaultChannel>
                 </producer>
               </producers>
             </configuration>
