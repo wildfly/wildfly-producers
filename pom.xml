@@ -115,14 +115,17 @@
                     <channel>
                       <name>current</name>
                       <version-range>[6.0-alpha,)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
                     <channel>
                       <name>9.0</name>
                       <version-range>[9.0-alpha,9.1)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
                     <channel>
                       <name>10.0</name>
                       <version-range>[10.0-alpha,10.1)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
