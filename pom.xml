@@ -127,6 +127,11 @@
                       <version-range>[10.0-alpha,10.1)</version-range>
                       <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
+                    <channel>
+                      <name>11.0</name>
+                      <version-range>[11.0-alpha,11.1)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -155,6 +160,10 @@
                       <name>18.0</name>
                       <version-range>[18.0-alpha,18.1)</version-range>
                     </channel>
+                    <channel>
+                      <name>19.0</name>
+                      <version-range>[19.0-alpha,19.1)</version-range>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -182,6 +191,10 @@
                     <channel>
                       <name>18.0</name>
                       <version-range>[18.0-alpha,18.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>19.0</name>
+                      <version-range>[19.0-alpha,19.1)</version-range>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
