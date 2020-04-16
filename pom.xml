@@ -132,6 +132,16 @@
                       <version-range>[11.0-alpha,11.1)</version-range>
                       <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
+                    <channel>
+                      <name>11</name>
+                      <version-range>[11.0-alpha,12)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
+                    <channel>
+                      <name>11.1</name>
+                      <version-range>[11.1-alpha,11.2)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -164,6 +174,14 @@
                       <name>19.0</name>
                       <version-range>[19.0-alpha,19.1)</version-range>
                     </channel>
+                    <channel>
+                      <name>19</name>
+                      <version-range>[19.0-alpha,20)</version-range>
+                    </channel>
+                    <channel>
+                      <name>19.1</name>
+                      <version-range>[19.1-alpha,19.2)</version-range>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -195,6 +213,14 @@
                     <channel>
                       <name>19.0</name>
                       <version-range>[19.0-alpha,19.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>19</name>
+                      <version-range>[19.0-alpha,20)</version-range>
+                    </channel>
+                    <channel>
+                      <name>19.1</name>
+                      <version-range>[19.1-alpha,19.2)</version-range>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
