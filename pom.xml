@@ -29,7 +29,7 @@
 
   <groupId>org.jboss.universe.producer</groupId>
   <artifactId>wildfly-producers</artifactId>
-  <version>1.1.4.Final-SNAPSHOT</version>
+  <version>1.1.4.Final</version>
   <packaging>pom</packaging>
 
   <name>WildFly Feature-pack Producers</name>
