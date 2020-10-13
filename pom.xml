@@ -162,6 +162,16 @@
                       <version-range>[13.0-alpha,14)</version-range>
                       <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
+                    <channel>
+                      <name>14.0</name>
+                      <version-range>[14.0-alpha,14.1)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
+                    <channel>
+                      <name>14</name>
+                      <version-range>[14.0-alpha,15)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -218,6 +228,14 @@
                       <name>21</name>
                       <version-range>[21.0-alpha,22)</version-range>
                     </channel>
+                    <channel>
+                    <name>22.0</name>
+                      <version-range>[22.0-alpha,22.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>22</name>
+                      <version-range>[22.0-alpha,23)</version-range>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -273,6 +291,14 @@
                     <channel>
                       <name>21</name>
                       <version-range>[21.0-alpha,22)</version-range>
+                    </channel>
+                    <channel>
+                      <name>22.0</name>
+                      <version-range>[22.0-alpha,22.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>22</name>
+                      <version-range>[22.0-alpha,23)</version-range>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
