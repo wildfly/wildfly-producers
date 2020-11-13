@@ -303,6 +303,30 @@
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
+                <producer>
+                  <name>wildfly-preview</name>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>${project.artifactId}</artifactId>
+                  <version>${project.version}</version>
+                  <feature-pack-groupId>org.wildfly</feature-pack-groupId>
+                  <feature-pack-artifactId>wildfly-galleon-pack</feature-pack-artifactId>
+                  <frequencies>
+                    <frequency>alpha</frequency>
+                    <frequency>beta</frequency>
+                    <frequency>snapshot</frequency>
+                  </frequencies>
+                  <channels>
+                    <channel>
+                      <name>22.0</name>
+                      <version-range>[22.0-alpha,22.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>22</name>
+                      <version-range>[22.0-alpha,23)</version-range>
+                    </channel>
+                  </channels>
+                  <defaultChannel>current</defaultChannel>
+                </producer>
               </producers>
             </configuration>
           </execution>
