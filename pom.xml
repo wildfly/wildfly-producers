@@ -240,6 +240,62 @@
                   <defaultChannel>current</defaultChannel>
                 </producer>
                 <producer>
+                  <name>wildfly-ee</name>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>${project.artifactId}</artifactId>
+                  <version>${project.version}</version>
+                  <feature-pack-groupId>org.wildfly</feature-pack-groupId>
+                  <feature-pack-artifactId>wildfly-ee-galleon-pack</feature-pack-artifactId>
+                  <frequencies>
+                    <frequency>alpha</frequency>
+                    <frequency>beta</frequency>
+                    <frequency>snapshot</frequency>
+                  </frequencies>
+                  <channels>
+                    <channel>
+                      <name>current</name>
+                      <version-range>[19.0-alpha,)</version-range>
+                    </channel>
+                    <channel>
+                      <name>19.0</name>
+                      <version-range>[19.0-alpha,19.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>19</name>
+                      <version-range>[19.0-alpha,20)</version-range>
+                    </channel>
+                    <channel>
+                      <name>19.1</name>
+                      <version-range>[19.1-alpha,19.2)</version-range>
+                    </channel>
+                    <channel>
+                      <name>20.0</name>
+                      <version-range>[20.0-alpha,20.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>20</name>
+                      <version-range>[20.0-alpha,21)</version-range>
+                    </channel>
+                    <channel>
+                      <name>21.0</name>
+                      <version-range>[21.0-alpha,21.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>21</name>
+                      <version-range>[21.0-alpha,22)</version-range>
+                    </channel>
+                    <channel>
+                      <name>22.0</name>
+                      <version-range>[22.0-alpha,22.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>22</name>
+                      <version-range>[22.0-alpha,23)</version-range>
+                    </channel>
+                  </channels>
+                  <defaultChannel>current</defaultChannel>
+                </producer>
+                <producer>
                   <name>wildfly</name>
                   <groupId>${project.groupId}</groupId>
                   <artifactId>${project.artifactId}</artifactId>
