@@ -217,6 +217,16 @@
                       <version-range>[18.0-alpha,19)</version-range>
                       <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
+                    <channel>
+                      <name>19.0</name>
+                      <version-range>[19.0-alpha,19.1)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
+                    <channel>
+                      <name>19</name>
+                      <version-range>[19.0-alpha,20)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -317,6 +327,7 @@
                       <name>26</name>
                       <version-range>[26.0-alpha,27)</version-range>
                     </channel>
+                    <!-- TODO WFLY-16199 add 27 channels if we decide to retain this feature pack -->
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -408,6 +419,14 @@
                     <channel>
                       <name>26</name>
                       <version-range>[26.0-alpha,27)</version-range>
+                    </channel>
+                    <channel>
+                      <name>27.0</name>
+                      <version-range>[27.0-alpha,27.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>27</name>
+                      <version-range>[27.0-alpha,28)</version-range>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
@@ -509,6 +528,14 @@
                       <name>26</name>
                       <version-range>[26.0-alpha,27)</version-range>
                     </channel>
+                    <channel>
+                      <name>27.0</name>
+                      <version-range>[27.0-alpha,27.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>27</name>
+                      <version-range>[27.0-alpha,28)</version-range>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -572,6 +599,14 @@
                     <channel>
                       <name>26</name>
                       <version-range>[26.0-alpha,27)</version-range>
+                    </channel>
+                    <channel>
+                      <name>27.0</name>
+                      <version-range>[27.0-alpha,27.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>27</name>
+                      <version-range>[27.0-alpha,28)</version-range>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
