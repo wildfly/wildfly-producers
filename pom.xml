@@ -227,6 +227,16 @@
                       <version-range>[19.0-alpha,20)</version-range>
                       <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
+                    <channel>
+                      <name>20.0</name>
+                      <version-range>[20.0-alpha,20.1)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
+                    <channel>
+                      <name>20</name>
+                      <version-range>[20.0-alpha,21)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -327,7 +337,7 @@
                       <name>26</name>
                       <version-range>[26.0-alpha,27)</version-range>
                     </channel>
-                    <!-- TODO WFLY-16199 add 27 channels if we decide to retain this feature pack -->
+                    <!-- Beginning with WildFly 27 / WFLY-16199 this feature pack is no longer produced. -->
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -427,6 +437,14 @@
                     <channel>
                       <name>27</name>
                       <version-range>[27.0-alpha,28)</version-range>
+                    </channel>
+                    <channel>
+                      <name>28.0</name>
+                      <version-range>[28.0-alpha,28.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>28</name>
+                      <version-range>[28.0-alpha,29)</version-range>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
@@ -536,6 +554,14 @@
                       <name>27</name>
                       <version-range>[27.0-alpha,28)</version-range>
                     </channel>
+                    <channel>
+                      <name>28.0</name>
+                      <version-range>[28.0-alpha,28.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>28</name>
+                      <version-range>[28.0-alpha,29)</version-range>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -607,6 +633,14 @@
                     <channel>
                       <name>27</name>
                       <version-range>[27.0-alpha,28)</version-range>
+                    </channel>
+                    <channel>
+                      <name>28.0</name>
+                      <version-range>[28.0-alpha,28.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>28</name>
+                      <version-range>[28.0-alpha,29)</version-range>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
