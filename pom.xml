@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-
-    Copyright 2016-2018 Red Hat, Inc. and/or its affiliates
-    and other contributors as indicated by the @author tags.
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
--->
+  ~ Copyright The WildFly Authors
+  ~ SPDX-License-Identifier: Apache-2.0
+  -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -322,6 +308,16 @@
                       <version-range>[28.0-alpha,29)</version-range>
                       <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
+                    <channel>
+                      <name>29.0</name>
+                      <version-range>[29.0-alpha,29.1)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
+                    <channel>
+                      <name>29</name>
+                      <version-range>[29.0-alpha,30)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -595,6 +591,14 @@
                       <name>36</name>
                       <version-range>[36.0-alpha,37)</version-range>
                     </channel>
+                    <channel>
+                      <name>37.0</name>
+                      <version-range>[37.0-alpha,37.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>37</name>
+                      <version-range>[37.0-alpha,38)</version-range>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -775,6 +779,14 @@
                       <name>36</name>
                       <version-range>[36.0-alpha,37)</version-range>
                     </channel>
+                    <channel>
+                      <name>37.0</name>
+                      <version-range>[37.0-alpha,37.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>37</name>
+                      <version-range>[37.0-alpha,38)</version-range>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -918,6 +930,14 @@
                     <channel>
                       <name>36</name>
                       <version-range>[36.0-alpha,37)</version-range>
+                    </channel>
+                    <channel>
+                      <name>37.0</name>
+                      <version-range>[37.0-alpha,37.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>37</name>
+                      <version-range>[37.0-alpha,38)</version-range>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
