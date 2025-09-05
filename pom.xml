@@ -10,7 +10,7 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>jboss-parent</artifactId>
-    <version>47</version>
+    <version>50</version>
   </parent>
 
   <groupId>org.jboss.universe.producer</groupId>
@@ -19,6 +19,9 @@
   <packaging>pom</packaging>
 
   <name>WildFly Feature-pack Producers</name>
+  <description>Galleon producer generation for WildFly feature packs</description>
+  <url>https://github.com/wildfly/wildfly-producers</url>
+    
   <inceptionYear>2018</inceptionYear>
   <licenses>
     <license>
@@ -28,8 +31,28 @@
     </license>
   </licenses>
 
+  <scm>
+    <connection>scm:git:git@github.com:wildfly/wildfly-producers.git</connection>
+    <developerConnection>scm:git:git@github.com:wildfly/wildfly-producers.git</developerConnection>
+    <url>https://github.com/wildfly/wildfly-producers</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>wildfly.org</id>
+      <name>WildFly Community</name>
+      <organization>wildfly.org</organization>
+      <organizationUrl>http://wildfly.org</organizationUrl>
+    </developer>
+  </developers>
+
   <properties>
-    <!--
+
+        <!-- Repository Deployment Settings -->
+        <nexus.repository.staging>wildfly-staging</nexus.repository.staging>
+        <nexus.staging.tag>wildfly-producers-${project.version}</nexus.staging.tag>
+        
+        <!--
         Dependency versions. Please keep alphabetical.
 
         Each version property should be of the form "version.<groupId>".
