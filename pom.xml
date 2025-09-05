@@ -318,6 +318,16 @@
                       <version-range>[29.0-alpha,30)</version-range>
                       <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
                     </channel>
+                    <channel>
+                      <name>30.0</name>
+                      <version-range>[30.0-alpha,30.1)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
+                    <channel>
+                      <name>30</name>
+                      <version-range>[30.0-alpha,31)</version-range>
+                      <version-exclude-regex>.*-redhat-[0-9][0-9][0-9][0-9][0-9]</version-exclude-regex>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -599,6 +609,14 @@
                       <name>37</name>
                       <version-range>[37.0-alpha,38)</version-range>
                     </channel>
+                    <channel>
+                      <name>38.0</name>
+                      <version-range>[38.0-alpha,38.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>38</name>
+                      <version-range>[38.0-alpha,39)</version-range>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -787,6 +805,14 @@
                       <name>37</name>
                       <version-range>[37.0-alpha,38)</version-range>
                     </channel>
+                    <channel>
+                      <name>38.0</name>
+                      <version-range>[38.0-alpha,38.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>38</name>
+                      <version-range>[38.0-alpha,39)</version-range>
+                    </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
                 </producer>
@@ -938,6 +964,14 @@
                     <channel>
                       <name>37</name>
                       <version-range>[37.0-alpha,38)</version-range>
+                    </channel>
+                    <channel>
+                      <name>38.0</name>
+                      <version-range>[38.0-alpha,38.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>38</name>
+                      <version-range>[38.0-alpha,39)</version-range>
                     </channel>
                   </channels>
                   <defaultChannel>current</defaultChannel>
