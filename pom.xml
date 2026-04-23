@@ -15,7 +15,7 @@
 
   <groupId>org.jboss.universe.producer</groupId>
   <artifactId>wildfly-producers</artifactId>
-  <version>1.3.18.Final-SNAPSHOT</version>
+  <version>1.4.0.Final-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>WildFly Feature-pack Producers</name>
@@ -667,6 +667,34 @@
                     <channel>
                       <name>39</name>
                       <version-range>[39.0-alpha,40)</version-range>
+                    </channel>
+                    <channel>
+                      <name>40.0</name>
+                      <version-range>[40.0-alpha,40.1)</version-range>
+                    </channel>
+                    <channel>
+                      <name>40</name>
+                      <version-range>[40.0-alpha,41)</version-range>
+                    </channel>
+                  </channels>
+                  <defaultChannel>current</defaultChannel>
+                </producer>
+                <producer>
+                  <name>wildfly-ee-10</name>
+                  <groupId>${project.groupId}</groupId>
+                  <artifactId>${project.artifactId}</artifactId>
+                  <version>${project.version}</version>
+                  <feature-pack-groupId>org.wildfly</feature-pack-groupId>
+                  <feature-pack-artifactId>wildfly-ee-10-feature-pack</feature-pack-artifactId>
+                  <frequencies>
+                    <frequency>alpha</frequency>
+                    <frequency>beta</frequency>
+                    <frequency>snapshot</frequency>
+                  </frequencies>
+                  <channels>
+                    <channel>
+                      <name>current</name>
+                      <version-range>[40.0-alpha,)</version-range>
                     </channel>
                     <channel>
                       <name>40.0</name>
